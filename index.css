@@ -1,0 +1,127 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  color: #622569
+  padding: 20px;
+  background: linear-gradient(to bottom, #d6d4e0 0%, #622569 100%);
+}
+
+/* Header Title */
+.header {
+    background-image: linear-gradient(90deg, #622569 0%, rgba(175,111,200,1), 41%, #5b9aa0 100%);
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 50px;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 60px;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* Image stying */
+.image {
+  background-color: #5b9aa0;
+  width: 100%;
+  padding: 20px;
+}
+
+.image-2 {
+  background-color: #5b9aa0;
+  width: 50%;
+  padding: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto
+}
+
+/* Add a card effect sections */
+.card {
+  background-color: whitesmoke;
+  padding: 20px;
+  margin-top: 20px;
+  font-family: sans-serif;
+  color: #622569
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* links and buttons styling */
+.links a{
+    text-decoration: none;
+    color:#5b9aa0;
+}
+
+.links a:hover{
+  color: #622569;
+  font-weight: bold;
+}
+
+.buttons{
+  text-align: center;
+}
+
+.button{
+  text-align: center;
+  background-color: #5b9aa0;
+  border-color: #622569;
+  padding: 32px 16px;
+  font-size: 16px;
+  color: #d6d4e0;
+  display: inline-block;
+  border-radius: 12px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  }
+
+.button:hover {
+  background-color: #622569;
+  color: white;
+}
+.buttons a{
+  text-decoration: none;
+}
+
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  font-size: 20px;
+  color: #622569;
+  background: #b8a9c9;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+}
